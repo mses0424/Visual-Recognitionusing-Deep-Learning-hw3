@@ -47,15 +47,8 @@ pillow
 
 ### Training
 
-```bash
-python train.py
-```
-
-(Or run the Kaggle notebook `notebook_final.ipynb` from top to bottom — it
-trains, runs inference, and produces `submission.zip` in one go.)
-
-Edit `CFG.data_root` in the notebook / script to point to your local copy
-of the HW3 dataset.
+Run the Kaggle notebook `notebook_final.ipynb` from top to bottom — it
+trains, runs inference, and produces `submission.zip`.
 
 ### Inference
 
@@ -63,22 +56,12 @@ Inference is part of the same notebook (cells 12–14): after training, the
 best weights are loaded back into `model` automatically and the test set
 is processed to produce `submission.zip`.
 
-```bash
-python inference.py    # if you split it into a separate script
-```
 
-## Performance Snapshot
-
-`[Insert a screenshot of the leaderboard here]`
-
-Best validation `AP50 = 0.5105` (above the strong baseline of 0.35).
+Best validation `AP50 = 0.524`.
 
 ---
 
-## Code Walkthrough
-
-The full pipeline is divided into self-contained sections. Each block below
-is one notebook cell with a brief description of what it does.
+## Code 
 
 ### 1. Environment Setup
 
